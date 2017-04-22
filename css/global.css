@@ -29,7 +29,7 @@ img{vertical-align:top;border:none}
 .col_ba1a16{color:#ba1a16;}
 .col_ce0021{color:#ff0000;}
 /*页面宽度*/
-.container{width: 1000px;margin: 0 auto;}
+.container{width: 1100px;margin: 0 auto;}
 /*头部条栏*/
 .site-nav{height: 32px;border-bottom: 1px solid #e9e9e9;line-height: 32px;font-size:0;background:#f5f5f5;font-family:"";position: relative;z-index:999}
 .site-nav:after {clear: both;content: "";display: table;}
@@ -51,7 +51,7 @@ img{vertical-align:top;border:none}
 /* header */
 .head-nav{width:100%;height:65px;line-height:65px;padding:8px 0px;background: #fff;border-bottom:1px solid #e4e4e4;-moz-box-shadow:0 2px 3px #e4e4e4;box-shadow:0 2px 3px #e4e4e4;position: relative;*z-index:99;}
 .head-nav-l{width:450px;float: left;}
-.head-nav-r{width:550px;float: left;text-align:right;}
+.head-nav-r{width:550px;float: right;text-align:right;}
 .head-nav-r a{display:inline-block;*display:inline;zoom:1;font-size: 14px;color: #7c7c7d;padding-left:15px;}
 .head-nav-r .weixin{position: relative;}
 .head-nav-r .weixin .evm{width:164px;height:29px;line-height:20px;font-size:12px;font-family:"Microsoft Yahei";text-align:center;padding-top:170px;background: url(../images/2code.png) no-repeat center bottom;position: absolute;top:42px;right:-4px;z-index:99;display:none;}
@@ -60,7 +60,7 @@ img{vertical-align:top;border:none}
 .main{margin-top:80px;padding:50px 0px;border:1px solid #dbdadb;background: #fff;position: relative;}
 .main .find_pass{padding-bottom:100px;}
 .main .find_pass .input-div{padding-top:30px;}
-.prompt{width:274px;height:60px;line-height:60px;text-align:center;padding:0px 10px;position: absolute;top:-81px;left:50%;margin-left:-147px;font-size:14px;color:#fff;background:#0087cb;border-bottom-left-radius:5px;border-bottom-right-radius:5px;box-shadow:0 2px 3px #e4e4e4;-moz-box-shadow:0 2px 3px #e4e4e4;}
+.prompt{width:274px;height:60px;line-height:60px;text-align:center;padding:0px 10px;position: absolute;top:-81px;left:50%;margin-left:-147px;font-size:14px;color:#fff;background:#108ee9;border-bottom-left-radius:5px;border-bottom-right-radius:5px;box-shadow:0 2px 3px #e4e4e4;-moz-box-shadow:0 2px 3px #e4e4e4;}
 .main-left{padding-left:130px;padding-bottom:20px;width:565px;border-right:1px dashed #e6e6e6;float: left;}
 .main-left h2{font-family:"Microsoft Yahei";font-size: 16px;color:#333;font-weight: bold;height:36px;line-height:36px;}
 .main-left .input-div{padding-top:20px;}
@@ -71,13 +71,13 @@ img{vertical-align:top;border:none}
 .main-left .input-text .input{border:1px solid #f3f3f3;font-size:14px;width:276px;height:38px;*margin-top:-1px;line-height:38px;padding:0 10px;position:relative;z-index:3;background:none;}
 .main-left .input-text span{position: absolute;top:0px;left:0;height:40px;line-height:40px;padding:0 10px;z-index:2;font-size:14px;color:#999;}
 .main-left .input-radio{color:#666;text-align: center;width:137px;height:36px;line-height:36px;float:left;background:url(../images/radio_bg.png) no-repeat center;margin-right:12px;border:1px solid #cdcccc;cursor: pointer;}
-.main-left .input-radio:hover{border:1px solid #1ba3e7;-moz-box-shadow: 0px 0px 3px #1ba3e7;-webkit-box-shadow: 0px 0px 3px #1ba3e7;box-shadow: 0px 0px 3px #1ba3e7;color:#0087cb;}
-.main-left .radio-cur{background:url(../images/radio_cur.png) no-repeat center;border:1px solid #0087cb;color:#0087cb;}
+.main-left .input-radio:hover{border:1px solid #1ba3e7;-moz-box-shadow: 0px 0px 3px #1ba3e7;-webkit-box-shadow: 0px 0px 3px #1ba3e7;box-shadow: 0px 0px 3px #1ba3e7;color:#108ee9;}
+.main-left .radio-cur{background:url(../images/radio_cur.png) no-repeat center;border:1px solid #108ee9;color:#108ee9;}
 .main-left .mr20{margin-right:21px;}
-.main-left .point{color:#0087cb;width:250px;height:42px;line-height:40px;float:left;display:none;}
+.main-left .point{color:#108ee9;width:250px;height:42px;line-height:40px;float:left;display:none;}
 .main-left .point-ico1{width:227px;padding-left:23px;background: url(../images/yes.png) no-repeat left;}
 .main-left .point-ico2{width:227px;padding-left:23px;background: url(../images/no.png) no-repeat left;color:#fa3f3f}
-.main-left .input-div .submit{width:300px;height:44px;line-height:44px;font-size:16px;font-weight: bold;color:#fff;border:0px;background: #0087cb;font-family:"Microsoft Yahei";}
+.main-left .input-div .submit{width:300px;height:44px;line-height:44px;font-size:16px;font-weight: bold;color:#fff;border:0px;background: #108ee9;font-family:"Microsoft Yahei";}
 .main-left .input-yzm{width:188px;}
 .main-left .input-yzm .input{width:166px;}
 .main-left .yanzm{width:86px;text-align: center;float: left;padding-left:10px;padding-right:12px;}
@@ -88,7 +88,7 @@ img{vertical-align:top;border:none}
 .main-right .main-weixin a:hover{background-position:-62px 0;}
 .main-right .main-weixin span{display:block;height:45px;line-height:45px;width:221px;background: url(../images/main_weixinbg.png) no-repeat center;font-size:14px;color:#666;text-align: center;margin:0 auto;}
 .main-right .main-gosign{padding-top:20px;color:#666;font-size:14px;text-align: center;}
-.main-right .main-gosign a{height:30px;line-height:30px;display:block;color:#0087cb;}
+.main-right .main-gosign a{height:30px;line-height:30px;display:block;color:#108ee9;}
 /*  */
 .login_check{width:300px;text-align:right;font-size:14px;}
 .login_check span{float: left;width:150px;text-align:left;}
@@ -108,7 +108,7 @@ img{vertical-align:top;border:none}
 .footer-left ul li{padding-right:15px;display:inline-block;*display:inline;zoom:1;}
 .footer-left ul li a{color:#888;font-size:14px;}
 .footer-left span{display:block;color:#888;padding-top:24px;}
-.footer-right{float:left;width:300px;text-align:right;color:#888;}
+.footer-right{float:right;width:300px;text-align:right;color:#888;}
 .footer-right .ftop{font-weight:bold;font-size:18px;color:#7f7f7f;}
 .footer-right .ftop span{font-weight:normal;}
 .fcen span{display: inline-block;width:80px;height:16px;line-height:16px;margin-left:5px;margin-top:3px;color:#fff;background:#c3c3c3;border-radius:5px;text-align:center;}

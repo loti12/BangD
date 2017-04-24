@@ -112,3 +112,18 @@ img{vertical-align:top;border:none}
 .footer-right .ftop{font-weight:bold;font-size:18px;color:#7f7f7f;}
 .footer-right .ftop span{font-weight:normal;}
 .fcen span{display: inline-block;width:80px;height:16px;line-height:16px;margin-left:5px;margin-top:3px;color:#fff;background:#c3c3c3;border-radius:5px;text-align:center;}
+
+a.con_btn{
+    display: inline-block;
+    padding: 2px 8px;
+    background: #108ee9;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+a.con_btn:hover{
+    background: #40a5ed;
+}

@@ -657,7 +657,7 @@ a {
 	position: relative;
 	z-index: 2;
 	margin: 0 auto;
-	padding-top: 340px;
+	padding-top: 331px;
 	width: 1180px;
 }
 
@@ -683,7 +683,7 @@ a {
 }
 
 .search_form {
-	height: 50px;
+	height: 80px;
 }
 
 .search_form input {
@@ -2772,7 +2772,7 @@ a {
 .payment-list-content .payment-item-title {
     font-size: 18px;
     color: #1a1a1a;
-    padding: 10px 0 19px 0;
+    padding: 10px 0 22px 0;
 }
 .payment-list-content .payment-item-icon{
     font-size: 0;
@@ -3020,4 +3020,17 @@ a {
     }
     /*end payment*/
 
+    /*hot city*/
+.hot_city{
+	position: relative;
+	display: inline-block;
+	line-height: 38px;
+	color: #fff;
+}
+
+
+.hot_city a{
+	color: #fff;
+	padding-right: 15px;
+}
 

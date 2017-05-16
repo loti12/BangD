@@ -127,3 +127,9 @@ a.con_btn{
 a.con_btn:hover{
     background: #40a5ed;
 }
+
+
+.f_size12{font-size: 12px;}
+.f_size14{font-size: 14px;}
+.f_size16{font-size: 16px;}
+.f_size24{font-size: 24px;}

@@ -2,13 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>BangD-首页</title>
+<title>BangD-列表页</title>
 <meta name="keywords"    content="">
 <meta name="description" content="">
 <meta name="searchtitle" content="" />
 <meta name="copyright"   content="" />
 <link rel="stylesheet" type="text/css" href="css/global.css"/>
 <link rel="stylesheet" type="text/css" href="css/index.css"/>
+<link rel="stylesheet" type="text/css" href="css/list.css"/>
 <link rel="stylesheet" type="text/css" href="css/picker.css"/>
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/picker.js"></script>
@@ -18,16 +19,387 @@
 		<div class="container clearfix">
 			<a href="#" class="head-nav-l"><img src="images/logo.png" alt="" /></a>
 			<div class="head-nav-r">
-				<a href="login.html">登录</a>
-				<a href="register.html">注册</a>
+				<a href="#">李小明</a>
 				<a href="#" class="weixin">微信订阅
 					<div class="evm">公众号：<span>BangD-official</span></div>
 				</a>
 			</div>
 		</div>
 	</div>
-	<div>	
-		<div class="container">
+	<form id="reSearchForm">
+	    <div id="search_form" class="search_form container clearfix">
+	        <div class="flight_attribute" id="flightTypeList">
+                <div class="first_line">
+                    <div class="type_item">
+                        <span class="ico_search_type ico_search_dcity"></span>
+                        <input type="text" id="DCityName1" name="DCityName1" mod="address|notice" data-ubt="DCityName1" mod_address_tpl="on" mod_address_reference="DCity1" placeholder="出发城市" mod_address_source="flight_new" autocomplete="on">
+                    </div>
+                    <div class="type_item">
+                        <span class="ico_search_type ico_search_acity"></span>
+                        <input type="text" id="ACityName1" name="ACityName1" data-ubt="ACityName1" mod_address_reference="ACity1" mod_address_tpl="on" mod="address|notice" mod_address_source="flight_new" placeholder="到达城市" autocomplete="on">
+                    </div>
+                    <div class="type_item">
+                        <span class="ico_search_type  icon ico_calendar"></span>
+                        <input id="DDate1" name="DDate1" type="text" value="" mod="calendar|notice" placeholder="年/月/日" data-ubt="DDate1" autocomplete="off" >
+                    </div>
+                </div>
+	        </div>
+	        <div class="search_tools clearfix" id="searchBtns">
+	            <input type="button" data-ubt="ReSearch" value="重新搜索" style="display: " class="btn_search" id="btnReSearch">
+	            <input type="button" data-ubt="ReSearch" value="发布需求" style="display: " class="btn_search" id="btnReSearch">
+	        </div>
+	    </div>
+	</form>
+	<div class="goCity container">	
+		<div class="goCityList">
+			<a href="#">柏林</a>
+			<a href="#">法兰克福</a>
+			<a href="#">慕尼黑</a>
+			<a href="#">汉堡</a>
+			<a href="#">北京</a>
+			<a href="#">纽约</a>
+			<a href="#">大阪</a>
+			<a href="#">上海</a>
+			<a href="#">华盛顿</a>
+			<a href="#">伦敦</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="searchLeft"></div>
+		<div class="searchR_content choose_type_m">
+			<div class="searchR_part">
+				<div class="searchR_num">为您找到<em>56</em>个搜索结果</div>
+				<div></div>
+			</div>
+			<div class="flight-list-content">
+				<div>
+					<div class="flist_box">
+						<table class="flist_info" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr class="theFlight">
+									<td class="wid_156" width="160">
+										<div class="hk_part1">
+											<img class="personLogo" src="images/touxiang.jpg">
+											<div>Qing Xu</div>
+											<div>Berlin, Deu</div>
+										</div>
+										<div class="hk_part2">Publish：<em class="link_borbot">2 days ago</em>
+										</div>
+									</td>
+									<td width="130" class="f_pleft_b f_fam_a f_size14" align="right">
+										<div class="f_size24">
+											Berlin
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 25
+										</div>
+									</td>
+									<td width="75" valign="top" align="center">
+										<a href="javascript:void(0);" class="d_passBy hidden"></a>
+										<div class="offarrow">
+										</div>
+									</td>
+									<td width="130" align="left">
+										<div class="f_size24">
+											BeiJing
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 27
+										</div>
+									</td>
+									<td width="150">
+										<div class="icon_bag f_size14">>10kg</div>
+										<div class="f_size16"><em>8</em>euro/kg</div>
+									</td>
+									<td>
+										<a class="SelectThis" href="#">选择</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="flist_box">
+						<table class="flist_info" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr class="theFlight">
+									<td class="wid_156" width="160">
+										<div class="hk_part1">
+											<img class="personLogo" src="images/touxiang.jpg">
+											<div>Qing Xu</div>
+											<div>Berlin, Deu</div>
+										</div>
+										<div class="hk_part2">Publish：<em class="link_borbot">2 days ago</em>
+										</div>
+									</td>
+									<td width="130" class="f_pleft_b f_fam_a f_size14" align="right">
+										<div class="f_size24">
+											Berlin
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 25
+										</div>
+									</td>
+									<td width="75" valign="top" align="center">
+										<a href="javascript:void(0);" class="d_passBy hidden"></a>
+										<div class="offarrow">
+										</div>
+									</td>
+									<td width="130" align="left">
+										<div class="f_size24">
+											BeiJing
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 27
+										</div>
+									</td>
+									<td width="150">
+										<div class="icon_bag f_size14">>10kg</div>
+										<div class="f_size16"><em>8</em>euro/kg</div>
+									</td>
+									<td>
+										<a class="SelectThis" href="#">选择</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="flist_box">
+						<table class="flist_info" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr class="theFlight">
+									<td class="wid_156" width="160">
+										<div class="hk_part1">
+											<img class="personLogo" src="images/touxiang.jpg">
+											<div>Qing Xu</div>
+											<div>Berlin, Deu</div>
+										</div>
+										<div class="hk_part2">Publish：<em class="link_borbot">2 days ago</em>
+										</div>
+									</td>
+									<td width="130" class="f_pleft_b f_fam_a f_size14" align="right">
+										<div class="f_size24">
+											Berlin
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 25
+										</div>
+									</td>
+									<td width="75" valign="top" align="center">
+										<a href="javascript:void(0);" class="d_passBy hidden"></a>
+										<div class="offarrow">
+										</div>
+									</td>
+									<td width="130" align="left">
+										<div class="f_size24">
+											BeiJing
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 27
+										</div>
+									</td>
+									<td width="150">
+										<div class="icon_bag f_size14">>10kg</div>
+										<div class="f_size16"><em>8</em>euro/kg</div>
+									</td>
+									<td>
+										<a class="SelectThis" href="#">选择</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="flist_box">
+						<table class="flist_info" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr class="theFlight">
+									<td class="wid_156" width="160">
+										<div class="hk_part1">
+											<img class="personLogo" src="images/touxiang.jpg">
+											<div>Qing Xu</div>
+											<div>Berlin, Deu</div>
+										</div>
+										<div class="hk_part2">Publish：<em class="link_borbot">2 days ago</em>
+										</div>
+									</td>
+									<td width="130" class="f_pleft_b f_fam_a f_size14" align="right">
+										<div class="f_size24">
+											Berlin
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 25
+										</div>
+									</td>
+									<td width="75" valign="top" align="center">
+										<a href="javascript:void(0);" class="d_passBy hidden"></a>
+										<div class="offarrow">
+										</div>
+									</td>
+									<td width="130" align="left">
+										<div class="f_size24">
+											BeiJing
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 27
+										</div>
+									</td>
+									<td width="150">
+										<div class="icon_bag f_size14">>10kg</div>
+										<div class="f_size16"><em>8</em>euro/kg</div>
+									</td>
+									<td>
+										<a class="SelectThis" href="#">选择</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="flist_box">
+						<table class="flist_info" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr class="theFlight">
+									<td class="wid_156" width="160">
+										<div class="hk_part1">
+											<img class="personLogo" src="images/touxiang.jpg">
+											<div>Qing Xu</div>
+											<div>Berlin, Deu</div>
+										</div>
+										<div class="hk_part2">Publish：<em class="link_borbot">2 days ago</em>
+										</div>
+									</td>
+									<td width="130" class="f_pleft_b f_fam_a f_size14" align="right">
+										<div class="f_size24">
+											Berlin
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 25
+										</div>
+									</td>
+									<td width="75" valign="top" align="center">
+										<a href="javascript:void(0);" class="d_passBy hidden"></a>
+										<div class="offarrow">
+										</div>
+									</td>
+									<td width="130" align="left">
+										<div class="f_size24">
+											BeiJing
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 27
+										</div>
+									</td>
+									<td width="150">
+										<div class="icon_bag f_size14">>10kg</div>
+										<div class="f_size16"><em>8</em>euro/kg</div>
+									</td>
+									<td>
+										<a class="SelectThis" href="#">选择</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="flist_box">
+						<table class="flist_info" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr class="theFlight">
+									<td class="wid_156" width="160">
+										<div class="hk_part1">
+											<img class="personLogo" src="images/touxiang.jpg">
+											<div>Qing Xu</div>
+											<div>Berlin, Deu</div>
+										</div>
+										<div class="hk_part2">Publish：<em class="link_borbot">2 days ago</em>
+										</div>
+									</td>
+									<td width="130" class="f_pleft_b f_fam_a f_size14" align="right">
+										<div class="f_size24">
+											Berlin
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 25
+										</div>
+									</td>
+									<td width="75" valign="top" align="center">
+										<a href="javascript:void(0);" class="d_passBy hidden"></a>
+										<div class="offarrow">
+										</div>
+									</td>
+									<td width="130" align="left">
+										<div class="f_size24">
+											BeiJing
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 27
+										</div>
+									</td>
+									<td width="150">
+										<div class="icon_bag f_size14">>10kg</div>
+										<div class="f_size16"><em>8</em>euro/kg</div>
+									</td>
+									<td>
+										<a class="SelectThis" href="#">选择</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="flist_box">
+						<table class="flist_info" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr class="theFlight">
+									<td class="wid_156" width="160">
+										<div class="hk_part1">
+											<img class="personLogo" src="images/touxiang.jpg">
+											<div>Qing Xu</div>
+											<div>Berlin, Deu</div>
+										</div>
+										<div class="hk_part2">Publish：<em class="link_borbot">2 days ago</em>
+										</div>
+									</td>
+									<td width="130" class="f_pleft_b f_fam_a f_size14" align="right">
+										<div class="f_size24">
+											Berlin
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 25
+										</div>
+									</td>
+									<td width="75" valign="top" align="center">
+										<a href="javascript:void(0);" class="d_passBy hidden"></a>
+										<div class="offarrow">
+										</div>
+									</td>
+									<td width="130" align="left">
+										<div class="f_size24">
+											BeiJing
+										</div>
+										<div class="f_size14 morehidden110">
+											2017 Mai. 27
+										</div>
+									</td>
+									<td width="150">
+										<div class="icon_bag f_size14">>10kg</div>
+										<div class="f_size16"><em>8</em>euro/kg</div>
+									</td>
+									<td>
+										<a class="SelectThis" href="#">选择</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="p_page">
+					<a href="#">首页</a>
+					<a href="#">上一页</a>
+					<a href="#">1</a>
+					<a href="#" class="active">2</a>
+					<a href="#">3</a>
+					<a href="#">...</a>
+					<a href="#">下一页</a>
+					<a href="#">末页</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="footer clearfix">

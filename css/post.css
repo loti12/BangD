@@ -1,0 +1,83 @@
+.step_list{
+	width: 1100px; 
+	margin: 0 auto; 
+	position: relative; 
+	background: #fff; 
+	zoom: 1; 
+	margin-bottom: 20px;
+}
+.step_list:after{
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0;
+}
+
+.step_list .progress {
+	font: 400 14px 'Microsoft Yahei';
+	color: #666;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	background: #efefef;
+	margin: 21px 0 0;
+}
+
+.step_list .progress li {
+	width: 366px;
+	float: left;
+	position: relative;
+}
+
+.step_list .progress li a, .step_list .progress li b {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 34px;
+	background: url(img/sprites_v2.png) -535px -377px;
+}
+
+.step_list .progress li a {
+	left: 0;
+	background-position: -525px -377px
+}
+
+.step_list .progress li.s2 a {
+	left: 0;
+	background-position: -10px 0;
+}
+
+.step_list .progress li.c {
+	background: #108ee9;
+	color: #fff;
+}
+
+.step_list .progress li.c a {
+	background-position: -545px -377px;
+}
+
+.step_list .progress li.c b {
+	background-position: -514px -377px;
+}
+
+.post{
+	background: #fff;
+	border: 1px solid #efefef;
+}
+
+.form_title{
+	background: #efefef;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 15px;
+	font-size: 14px;
+}
+.form_content{
+	padding: 15px;
+}
+.form_fields{
+}

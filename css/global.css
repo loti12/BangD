@@ -22,17 +22,28 @@ input,textarea{padding:0px;}
 img{vertical-align:top;border:none}
 .clearfix:after{content:".";height:0;visibility:hidden;display:block;clear:both;font-size:0;line-height:0;}
 .clearfix{*zoom:1;}
+
 .fl{float:left;}
 .fr{float:right;}
+
 .p-tb-10{padding:10px 0;}
 .p-tb-20{padding:20px 0;}
+
 .col_ba1a16{color:#ba1a16;}
 .col_ce0021{color:#ff0000;}
+
+.f_size12{font-size: 12px;}
+.f_size14{font-size: 14px;}
+.f_size16{font-size: 16px;}
+.f_size24{font-size: 24px;}
+
 /*页面宽度*/
 .container{width: 1100px;margin: 0 auto;}
+
 /*头部条栏*/
 .site-nav{height: 32px;border-bottom: 1px solid #e9e9e9;line-height: 32px;font-size:0;background:#f5f5f5;font-family:"";position: relative;z-index:999}
 .site-nav:after {clear: both;content: "";display: table;}
+
 /* 头部登录 */
 .login{float: right;font-size:12px;width:620px;text-align: right;color:#444;}
 .login input{vertical-align:middle;}
@@ -52,10 +63,11 @@ img{vertical-align:top;border:none}
 .head-nav{width:100%;height:65px;line-height:65px;padding:8px 0px;background: #fff;border-bottom:1px solid #e4e4e4;-moz-box-shadow:0 2px 3px #e4e4e4;box-shadow:0 2px 3px #e4e4e4;position: relative;*z-index:99;}
 .head-nav-l{width:450px;float: left;}
 .head-nav-r{width:550px;float: right;text-align:right;}
-.head-nav-r a{display:inline-block;*display:inline;zoom:1;font-size: 14px;color: #7c7c7d;padding-left:15px;}
+.head-nav-r a{display:inline-block;*display:inline;zoom:1;font-size: 14px;color: #7c7c7d;padding-left:20px;}
 .head-nav-r .weixin{position: relative;}
 .head-nav-r .weixin .evm{width:164px;height:29px;line-height:20px;font-size:12px;font-family:"Microsoft Yahei";text-align:center;padding-top:170px;background: url(../images/2code.png) no-repeat center bottom;position: absolute;top:42px;right:-4px;z-index:99;display:none;}
 .head-nav-r .weixin:hover .evm{display: block;}
+
 /* main */
 .main{margin-top:80px;padding:50px 0px;border:1px solid #dbdadb;background: #fff;position: relative;}
 .main .find_pass{padding-bottom:100px;}
@@ -89,12 +101,14 @@ img{vertical-align:top;border:none}
 .main-right .main-weixin span{display:block;height:45px;line-height:45px;width:221px;background: url(../images/main_weixinbg.png) no-repeat center;font-size:14px;color:#666;text-align: center;margin:0 auto;}
 .main-right .main-gosign{padding-top:20px;color:#666;font-size:14px;text-align: center;}
 .main-right .main-gosign a{height:30px;line-height:30px;display:block;color:#108ee9;}
-/*  */
+
+/* login */
 .login_check{width:300px;text-align:right;font-size:14px;}
 .login_check span{float: left;width:150px;text-align:left;}
 .login_check span i{display:inline-block;width:16px;height:16px;background: url(../images/check.png) no-repeat;vertical-align:middle;margin-right:5px;}
 .login_check span i.cur{background: url(../images/checked.png) no-repeat;}
-/*  */
+
+/* password_find_skip */
 .success{font-size:14px;color:#333;line-height:200%}
 .success_top{width:614px;padding-left:245px;padding-top:53px;background: url(../images/success.png) no-repeat 205px 55px ;margin:0 auto;}
 .success_top a{font-size:18px;color:#0382dd;}
@@ -102,6 +116,18 @@ img{vertical-align:top;border:none}
 .success_ul{width:614px;padding-left:245px;margin:0 auto;border-top:1px solid #efefef;padding-top:12px;margin-top:12px;}
 .success_ul li{padding-left:15px;background: url(../images/e_ico.png) no-repeat left;}
 .success_ul li a{color:#0382dd;text-decoration: underline;}
+
+/* email */
+.email{width:618px;border:1px solid #e4e4e4;margin:50px auto;color:#424141;}
+.email a{color:#358ece}
+.email_top{height:60px;background: #f8f8f8;padding-left:30px;border:1px solid #fff;}
+.email_top a{display:block;padding:13px 0;}
+.email_main{padding:30px 30px 0;font-size:14px;}
+.email_main p{padding-bottom:30px;}
+.email_footer{padding:30px 30px 12px;}
+.email_footer span{display:block;padding-bottom:20px;line-height:180%;}
+.email_footer p{padding-top:15px;border-top:1px dashed #d2d2d2;color:#737373}
+
 /* footer */
 .footer{padding:40px 0px 20px;}
 .footer-left{float: left;width:700px;line-height:24px;}
@@ -128,8 +154,4 @@ a.con_btn:hover{
     background: #40a5ed;
 }
 
-
-.f_size12{font-size: 12px;}
-.f_size14{font-size: 14px;}
-.f_size16{font-size: 16px;}
-.f_size24{font-size: 24px;}
+.personPic em{color: #108ee9}

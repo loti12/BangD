@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="css/list.css"/>
 <link rel="stylesheet" type="text/css" href="css/picker.css"/>
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/list.js"></script>
 <script type="text/javascript" src="js/picker.js"></script>
 </head>
 <body>
@@ -19,7 +20,7 @@
 		<div class="container clearfix">
 			<a href="#" class="head-nav-l"><img src="images/logo.png" alt="" /></a>
 			<div class="head-nav-r">
-				<a href="#">李小明</a>
+				<a href="#" class="personPic">您好，<em>李小明</em></a>
 				<a href="#" class="weixin">微信订阅
 					<div class="evm">公众号：<span>BangD-official</span></div>
 				</a>
@@ -68,15 +69,19 @@
 		<div class="searchLeft">
 			<div class="budget_filter" style="border-left: 0px;">
 				<div class="filter_title">出发日期</div>	
+				<div class="type_item">
+                    <span class="ico_search_type  icon ico_calendar"></span>
+                    <input id="DDate1" name="DDate1" type="text" value="" mod="calendar|notice" placeholder="年/月/日" data-ubt="DDate1" autocomplete="off" >
+                </div>
 			</div>
 			<div class="budget_filter" style="border-left: 0px;">
-				<div class="filter_title">价格/公斤</div>	
+				<div class="filter_title">重量</div>	
 				<div class="price_range"> 
 					<div class="range" style="width: 191.5px;"> </div> 
 					<i class="icon ico_range" style="width: 22px; height: 22px; left: 182px; top: -8.5px;"></i> 
 				</div> 
-				<span class="budget fl">5欧</span>
-				<span class="budget fr">50欧</span> 
+				<span class="budget fl">1斤</span>
+				<span class="budget fr">20斤</span> 
 			</div>
 			<div class="budget_filter" style="border-left: 0px;">
 				<div class="filter_title">价格/公斤</div>	
@@ -95,11 +100,34 @@
 					<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">私聊</label>
 				</div>
 			</div>
+			<div class="budget_filter" style="border-left: 0px;">
+				<div class="filter_title">投递方式</div>	
+				<div class="filterGo">
+					<label class="cur"><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">自提</label>
+					<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">邮寄</label>
+					<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">私聊</label>
+				</div>
+			</div>
+			<div class="budget_filter" style="border-left: 0px;">
+				<div class="filter_title">同程看护</div>	
+				<div class="filterGo">
+					<label class="cur"><i class="icon ico_checkbox"></i><input name="area-filter" value="all" class="checkbox" type="checkbox" checked="checked">老人</label>
+					<label><i class="icon ico_checkbox"></i><input name="area-filter" value="all" class="checkbox" type="checkbox" checked="">小孩</label>
+				</div>
+			</div>
 		</div>
 		<div class="searchR_content choose_type_m">
-			<div class="searchR_part">
-				<div class="searchR_num">为您找到<em>56</em>个搜索结果</div>
-				<div></div>
+			<div class="searchR_part clearfix">
+				<div class="searchR_num">为您找到<em>56</em>个搜索结果</div>				
+				<div class="dropDown">
+					  <input class="putIn" readonly="readonly" type="text" value="排序1"/>
+					  <span class="dropBtn"><s></s></span>
+					  <ul class="dropList">
+						  <li>排序1</li>
+						  <li>排序2</li>
+						  <li>排序3</li>
+					  </ul>
+				 </div>
 			</div>
 			<div class="flight-list-content">
 				<div>

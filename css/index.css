@@ -2116,56 +2116,6 @@ a {
 	filter: none;
 }
 
-@media only screen and (max-width:1180px) {
-	#base_ft,.compare_city,.compare_fixed .compare_bottom,.container,.search_bar,.topbar_inner {
-		width: 980px;
-	}
-
-	.header {
-		padding: 20px 20px 0;
-		width: 940px;
-	}
-
-	.header .myctrip {
-		right: 20px;
-	}
-
-	.search_filter,.search_form {
-		width: 960px;
-	}
-
-	.search_form .search_calendar {
-		width: 140px;
-	}
-
-	.search_form .txt_calendar {
-		width: 130px;
-	}
-
-	.city_list .item {
-		width: 234px;
-	}
-
-	.city_list .item_top {
-		width: 483px;
-	}
-
-	.city_list .btn_normal {
-		margin: 0 2px;
-	}
-
-	.city_list .info {
-		padding-left: 5px;
-	}
-
-	.city_list h4 {
-		font-size: 18px;
-	}
-
-	.city_list .depart_time,.city_list .price {
-		right: 5px;
-	}
-}
 
 .popups {
 	position: relative;

@@ -17,6 +17,7 @@ legend{color:#000;}
 button,input,select,textarea{font-size:100%;}
 a{text-decoration:none;color:#666;cursor: pointer;}
 a:hover{text-decoration:none;}
+a.underline{text-decoration:underline}
 input,button{overflow:visible;}
 input,textarea{padding:0px;}
 img{vertical-align:top;border:none}
@@ -25,6 +26,7 @@ img{vertical-align:top;border:none}
 
 .fl{float:left;}
 .fr{float:right;}
+.tr{text-align: right;}
 
 .p-tb-10{padding:10px 0;}
 .p-tb-20{padding:20px 0;}
@@ -37,8 +39,20 @@ img{vertical-align:top;border:none}
 .f_size16{font-size: 16px;}
 .f_size24{font-size: 24px;}
 
+.mt20{margin-top:20px !important}
+.mb20{margin-bottom: 20px}
+.mt50{margin-top: 50px}
+.mb50{margin-bottom: 50px}
+.pb50{padding-bottom: 50px}
+.mlr50{margin-left:50px;margin-right:50px}
+.mlr10{margin-left: 10px;margin-right: 10px}
+.fourEm{padding-left: 4em}
+.twoEm{padding-left: 2em;}
+
+.clr_blue,.clr_blue a,a.clr_blue{color:#3e98f0}
+
 /*页面宽度*/
-.container{width: 1100px;margin: 0 auto;}
+.container{overflow: hidden;width: 1100px;margin: 0 auto;margin-top: 10px;}
 
 /*头部条栏*/
 .site-nav{height: 32px;border-bottom: 1px solid #e9e9e9;line-height: 32px;font-size:0;background:#f5f5f5;font-family:"";position: relative;z-index:999}
@@ -155,3 +169,11 @@ a.con_btn:hover{
 }
 
 .personPic em{color: #108ee9}
+
+
+/**pageNav**/
+.pageNav{font-size: 12px;text-align: center;margin: 20px 0;}
+.pageNav .wrap{display: inline-block;*display: inline;*zoom:1;overflow:hidden;}
+.pageNav a,.pageNav span{margin-right:5px;float:left;border:#ddd solid 1px;padding:0 10px;height:30px;line-height:30px;color:#333}
+.pageNav a:hover,.pageNav  a.on{background:#108ee9;border-color:#108ee9;color:#fff;text-decoration:none}
+.pageNav .all{border:0 none}

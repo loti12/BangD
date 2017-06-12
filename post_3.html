@@ -32,43 +32,36 @@
 		<div class="step_list confirm_order state2">
 		    <ul class="progress">
 		        <li class="s1">1、发布信息<b></b></li>
-		        <li class="s2 c"><a></a>2、确定订单信息<b></b></li>
-		        <li class="s3"><a></a>3、成功提交订单</li>
+		        <li class="s2"><a></a>2、确定订单信息<b></b></li>
+		        <li class="s3 c"><a></a>3、成功提交订单</li>
 		    </ul>
 		</div>
 		<div class="progress_result">
 			<div class="post post_1 clearfix">
-				<div class="form_title">航程</div>
+				<div class="form_title">其它（*可选）</div>
 				<div class="form_content">
-					<div class="form_fields">
-						<label class="cur"><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">单程</label>
-						<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">往返</label>
+					<div class="budget_filter" style="border-left: 0px;">
+						<div class="filter_title">同程看护老人家？</div>	
+						<div class="filterGo">
+							<label class="cur"><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">是</label>
+							<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">否</label>
+							<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">私聊</label>
+						</div>
+						<div class="filter_title">同程看护小孩？</div>	
+						<div class="filterGo">
+							<label class="cur"><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">是</label>
+							<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">否</label>
+							<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">私聊</label>
+						</div>
 					</div>
-			        <div class="flight_attribute" id="flightTypeList">
-		                <div class="first_line">
-		                    <div class="type_item">
-		                        <span class="ico_search_type ico_search_dcity"></span>
-		                        <input type="text" id="DCityName1" name="DCityName1" mod="address|notice" data-ubt="DCityName1" mod_address_tpl="on" mod_address_reference="DCity1" placeholder="出发城市" mod_address_source="flight_new" autocomplete="on">
-		                    </div>
-		                    <div class="type_item">
-		                        <span class="ico_search_type  icon ico_calendar"></span>
-		                        <input id="DDate1" name="DDate1" type="text" value="" mod="calendar|notice" placeholder="年/月/日" data-ubt="DDate1" autocomplete="off" >
-		                    </div>
-		                </div>
-			        </div>
-			        <div class="flight_attribute" id="flightTypeList">
-		                <div class="first_line">
-		                    <div class="type_item">
-		                        <span class="ico_search_type ico_search_acity"></span>
-		                        <input type="text" id="ACityName1" name="ACityName1" data-ubt="ACityName1" mod_address_reference="ACity1" mod_address_tpl="on" mod="address|notice" mod_address_source="flight_new" placeholder="到达城市" autocomplete="on">
-		                    </div>
-		                    <div class="type_item">
-		                        <span class="ico_search_type  icon ico_calendar"></span>
-		                        <input id="DDate1" name="DDate1" type="text" value="" mod="calendar|notice" placeholder="年/月/日" data-ubt="DDate1" autocomplete="off" >
-		                    </div>
-		                </div>
-			        </div>
 				</div>
+				<div class="form_content">
+					<div class="budget_filter" style="border-left: 0px;">
+						<div class="filter_title">说明</div>	
+						<textarea rows="5" cols="142" placeholder="您可以在这里给出更多说明 ..."></textarea>
+					</div>
+				</div>
+				<div class="tc"><a href="#" class="con_btn">上一步</a><a href="#" class="con_btn">发布</a></div>
 			</div>
 		</div>
 	</div>

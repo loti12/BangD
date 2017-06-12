@@ -27,6 +27,7 @@ img{vertical-align:top;border:none}
 .fl{float:left;}
 .fr{float:right;}
 .tr{text-align: right;}
+.tc{text-align: center;}
 
 .p-tb-10{padding:10px 0;}
 .p-tb-20{padding:20px 0;}
@@ -155,7 +156,7 @@ img{vertical-align:top;border:none}
 
 a.con_btn{
     display: inline-block;
-    padding: 2px 8px;
+    padding: 2px 15px;
     background: #108ee9;
     color: #fff;
     text-align: center;

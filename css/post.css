@@ -46,11 +46,6 @@
 	background-position: -525px -377px
 }
 
-.step_list .progress li.s2 a {
-	left: 0;
-	background-position: -10px 0;
-}
-
 .step_list .progress li.c {
 	background: #108ee9;
 	color: #fff;
@@ -67,6 +62,8 @@
 .post{
 	background: #fff;
 	border: 1px solid #efefef;
+	padding-bottom: 40px;
+	min-height: 500px;
 }
 
 .form_title{
@@ -80,4 +77,87 @@
 	padding: 15px;
 }
 .form_fields{
+	overflow: hidden;
+	margin: 20px 0;
+}
+.form_fields span{
+	display: inline-block;
+	float: left;
+	margin-left:20px;
+	padding: 5px;
+	width: 70px;
+	height:24px;
+	line-height: 24px;
+	border: 1px solid #d1dbe4;
+	border-radius:3px;
+	background: #fff;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+}
+.form_fields span:hover, .form_fields span:active, .form_fields span.cur{
+	border:1px solid #108ee9;
+}
+.form_content .flight_attribute{
+	float: none;
+	margin:2px 5px 10px 20px;
+}
+
+.flight_attribute .dropDown{
+	float: none;
+	position:relative;
+	top: 0;
+	right: 0;
+	z-index:3;
+	padding:0 0 0 10px;
+	width: 228px;
+	height: 32px;
+	line-height: 32px;
+	display: inline-flex;
+}
+.flight_attribute .dropDown input{
+	padding: 0;
+	height: 32px;
+	line-height: 32px;
+}
+.flight_attribute .dropDown .putIn{
+	width: 228px;
+}
+.flight_attribute .dropDown .dropBtn{
+	width: 228px;
+	left: 0;
+	height: 20px;
+	line-height: 32px;
+	background-position: 214px -190px;
+}
+.flight_attribute .dropDown .dropList{
+	width: 238px;
+	top: 32px;
+}
+.flight_attribute .first_line{
+	font-size: inherit;
+}
+.flight_attribute input.fnum{
+	padding-left: 10px;
+	width: 223px;
+}
+.form_fields_con{
+	margin: 35px 0;
+}
+.tc .con_btn{
+	padding:0 50px;
+	margin: 0 20px;
+	font-size: 14px;
+}
+.form_content .budget_filter{
+	padding-left: 20px;
+}
+.form_content .budget_filter .filter_title{
+	margin-top: 15px;
+}
+.budget_filter .budget_filter .form_fields_con{
+	margin: 0;
+}
+.budget_filter .flight_attribute{
+	margin-left: 0;
 }

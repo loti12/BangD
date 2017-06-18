@@ -7,7 +7,14 @@
 
 首页：index.html
 列表及搜索：list.html
-发布页：post.html
+发布页：post_1.html
+发布页：post_2.html
+发布页：post_3.html
+
+个人中心-基本资料：member.html
+个人中心_修改密码：member_pass.html
+个人中心_账户绑定：member_bind.html
+个人中心_站内信息：member_mess.html
 
 关于我们：about.html
 联系我们：contact.html

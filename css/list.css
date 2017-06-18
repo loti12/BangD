@@ -369,13 +369,19 @@
 	transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.icon_bag{
+.icon_bag, .icon_paper{
 	padding-left: 30px;
 	margin-bottom: 5px;
 	height: 20px;
 	line-height: 20px;
-	background: url(img/icon_search_select.png) no-repeat 1px -59px
+	background: url(img/icon_search_select.png) no-repeat;
 
+}
+.icon_bag{
+	background-position: 1px -59px
+}
+.icon_paper{
+	background-position: 1px -229px
 }
 
 /*page*/

@@ -15,6 +15,8 @@
 个人中心_修改密码：member_pass.html
 个人中心_账户绑定：member_bind.html
 个人中心_站内信息：member_mess.html
+个人中心_我的发布：member_issue.html
+个人中心_我的收藏：member_collect.html
 
 关于我们：about.html
 联系我们：contact.html
@@ -24,10 +26,3 @@
 媒体报道：media.html
 加入我们：job.html
 服务条款：terms.html
-
-
-6.19
-1、列表页左侧过滤器加一栏：海涛帮带，过滤器重量最大50公斤；加收藏、分享
-2、用户中心：加一个我发布的，加一个收藏
-3、用户中心：可不可以把绑定账户做成类似这样，可以比较直观看到哪些联系方式上已验证已绑定；
-4、日期输入加上caiedar选择、所有的交互

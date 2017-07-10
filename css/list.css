@@ -331,7 +331,7 @@
 }
 .morehidden110{
 	width: 80px;
-	margin-top: 5px;
+	line-height: 15px;
 	text-overflow:ellipsis;
 	white-space: nowrap;
 }
@@ -343,11 +343,14 @@
 	font-size: 12px;
 	margin-top: 2px;
 }
+.theFlight_time{
+	margin-top: 25px;
+}
 
 .offarrow{
-	width: 50px;
-	height: 25px;
-	background: url(img/sprites_v2.png) no-repeat -2px -405px;
+	width: 100px;
+	height: 16px;
+	background: url(img/sprites_v2.png) no-repeat 10px -410px;
 }
 
 .red{

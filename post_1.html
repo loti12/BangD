@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="css/list.css"/>
 <link rel="stylesheet" type="text/css" href="css/post.css"/>
 <link rel="stylesheet" type="text/css" href="css/picker.css"/>
+<link rel="stylesheet" type="text/css" href="css/test.css" />
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/list.js"></script>
 <script type="text/javascript" src="js/picker.js"></script>
@@ -52,7 +53,7 @@
 			                    </div>
 			                    <div class="type_item">
 			                        <span class="ico_search_type  icon ico_calendar"></span>
-			                        <input id="DDate1" name="DDate1" type="text" value="" mod="calendar|notice" placeholder="年/月/日" data-ubt="DDate1" autocomplete="off" >
+			                        <input id="datepicker" type="text" placeholder="年/月/日" value="" class="txt txt_calendar">
 			                    </div>
 			                </div>
 				        </div>
@@ -64,7 +65,7 @@
 			                    </div>
 			                    <div class="type_item">
 			                        <span class="ico_search_type  icon ico_calendar"></span>
-			                        <input id="DDate1" name="DDate1" type="text" value="" mod="calendar|notice" placeholder="年/月/日" data-ubt="DDate1" autocomplete="off" >
+			                        <input id="datepicker2" type="text" placeholder="年/月/日" value="" class="txt txt_calendar">
 			                    </div>
 			                </div>
 				        </div>
@@ -88,7 +89,7 @@
 			                    </div>
 			                    <div class="type_item">
 			                        <span class="ico_search_type  icon ico_calendar"></span>
-			                        <input id="DDate1" name="DDate1" type="text" value="" mod="calendar|notice" placeholder="年/月/日" data-ubt="DDate1" autocomplete="off" >
+			                        <input id="datepicker" type="text" placeholder="年/月/日" value="" class="txt txt_calendar">
 			                    </div>
 			                </div>
 				        </div>
@@ -100,7 +101,7 @@
 			                    </div>
 			                    <div class="type_item">
 			                        <span class="ico_search_type  icon ico_calendar"></span>
-			                        <input id="DDate1" name="DDate1" type="text" value="" mod="calendar|notice" placeholder="年/月/日" data-ubt="DDate1" autocomplete="off" >
+			                        <input id="datepicker" type="text" placeholder="年/月/日" value="" class="txt txt_calendar">
 			                    </div>
 			                </div>
 				        </div>
@@ -175,14 +176,105 @@
 		</div>
 	</div>
 </div>
-<div >
-	
+<div id="" class="mNotice-wrap hotel_s_warp">
+    <span class="mNotice-arrows"></span>
+    <div class="mNotice-mTab">
+        <h4 class="mNotice-mTab-head">热门城市
+            <span class="mNotice-mTab-head-remark">（可直接选择城市或输入城市中文/拼音）</span>
+            <span class="mNotice-close white"></span>
+        </h4>
+        <div class="mNotice-mTab-wrap">
+            <ul class="mNotice-mTab-tab-tray clearfix">
+                <li class="mNotice-mTab-item current">国内热门</li>
+                <li class="mNotice-mTab-item">国际热门</li>
+                <li class="mNotice-mTab-item ">亚洲</li>
+                <li class="mNotice-mTab-item ">欧洲</li>
+                <li class="mNotice-mTab-item ">美洲</li>
+                <li class="mNotice-mTab-item ">非洲</li>
+                <li class="mNotice-mTab-item ">大洋洲</li>
+            </ul>
+            <div class="mNotice-mTab-content clearfix">
+                <span class="mNotice-normal mNotice-fixWidth" title="北京">北京</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="上海">上海</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="广州">广州</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="深圳">深圳</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="成都">成都</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="西安">西安</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="杭州">杭州</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="武汉">武汉</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="长沙">长沙</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="重庆">重庆</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="青岛">青岛</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="南京">南京</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="厦门">厦门</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="昆明">昆明</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="大连">大连</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="三亚">三亚</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="天津">天津</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="哈尔滨">哈尔滨</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="呼和浩特">呼和浩特</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="上海浦东">上海浦东</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="温州">温州</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="沈阳">沈阳</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="北京南苑">北京南苑</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="北京首都">北京首都</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="上海虹桥">上海虹桥</span>
+            </div>
+            <div class="mNotice-mTab-content none">
+                <span class="mNotice-normal mNotice-fixWidth" title="国际热门1">国际热门1</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="国际热门2">国际热门2</span>
+            </div>
+            <div class="mNotice-mTab-content none">
+                <span class="mNotice-normal mNotice-fixWidth" title="亚洲1">亚洲1</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="亚洲2">亚洲2</span>
+            </div>
+            <div class="mNotice-mTab-content none">
+                <span class="mNotice-normal mNotice-fixWidth" title="欧洲1">欧洲1</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="欧洲2">欧洲2</span>
+            </div>
+            <div class="mNotice-mTab-content none">
+                <span class="mNotice-normal mNotice-fixWidth" title="美洲1">美洲1</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="美洲2">美洲2</span>
+            </div>
+            <div class="mNotice-mTab-content none">
+                <span class="mNotice-normal mNotice-fixWidth" title="非洲1">非洲1</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="非洲2">非洲2</span>
+            </div>
+            <div class="mNotice-mTab-content none">
+                <span class="mNotice-normal mNotice-fixWidth" title="大洋洲1">大洋洲1</span>
+                <span class="mNotice-normal mNotice-fixWidth" title="大洋洲2">大洋洲2</span>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
-	$( "#datepicker" ).datepicker({
-		inline: false,
-	    minDate: new Date()
-	});
+	$(document).ready(function () {
+		$( "#datepicker" ).datepicker({
+			inline: false,
+		    minDate: new Date()
+		});
+
+		$('.mNotice-mTab-tab-tray li').click(function(){
+			var index = $(this).index();
+			$(this).attr('class',"mNotice-mTab-item current").siblings('li').attr('class','mNotice-mTab-item');
+			$('.mNotice-mTab-content').eq(index).show(200).siblings('.mNotice-mTab-content').hide();
+		});
+
+		$('#DCityName1').focus(function(){
+			$('.mNotice-wrap').css('display','block');
+		});
+		$('#DCityName1').blur(function(){
+			if ('.mNotice-wrap') {
+				$('.mNotice-wrap').css('display','block');
+					$(".mNotice-wrap").mouseleave(function(){
+						$(this).css('display', 'none')
+		            });
+			}else{
+				$('.mNotice-wrap').css('display','none');
+			}
+		});
+
+	})
 </script>
 </body>
 </html>

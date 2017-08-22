@@ -313,10 +313,12 @@
 	padding-left: 20px;
 }
 .hk_part1 .personLogo{
-	width: 35px;
-	height: 35px;
+	width: 40px;
+	height: 40px;
 	float: left;
 	margin-right: 5px;
+	border-radius: 50%;
+
 }
 .hk_part1 div{
 	line-height: 20px;
@@ -351,6 +353,12 @@
 	width: 100px;
 	height: 16px;
 	background: url(img/sprites_v2.png) no-repeat 10px -410px;
+}
+
+.getarrow{
+	width: 100px;
+	height: 16px;
+	background: url(img/sprites_v2.png) no-repeat -85px -410px;
 }
 
 .red{
@@ -410,3 +418,14 @@
 	font-size:14px;
 }
 
+/*detail*/
+.layout{
+	padding: 20px;
+	background: #fff;
+	margin: 15px 0 10px;
+}
+.layout .personLogo{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}

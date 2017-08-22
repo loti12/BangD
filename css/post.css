@@ -161,3 +161,10 @@
 .budget_filter .flight_attribute{
 	margin-left: 0;
 }
+
+/*提示*/
+.tipsBox{position: fixed;z-index: 1000; left: 0;top: 0;right: 0;margin: auto;width: 290px;line-height: 20px;padding:20px 15px;background: #fff;border:5px solid #ccc;text-align: center;font-size: 14px;}
+.tipsBox.true-c{color: #2f8bce}
+.tipsBox.true-c span{background:url(img/true-i.png) 0 center no-repeat;padding-left: 30px;}
+.tipsBox.false-c{color: #df526f;}
+.tipsBox.false-c span{background:url(img/false-i.png) 0 center no-repeat;padding-left: 30px;}

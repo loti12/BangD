@@ -7,6 +7,7 @@
 
 首页：index.html
 列表及搜索：list.html
+详情页：detail.html
 发布页：post_1.html
 发布页：post_2.html
 发布页：post_3.html

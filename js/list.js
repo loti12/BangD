@@ -15,3 +15,21 @@ $(document).ready(function(){
 	  });
 	});
 });
+
+function tipsBox(bool,text,time){
+	time = time || 3000;
+	var div = $('<div class="tipsBox">');
+	div.append('<span>'+text+'</span>');
+	if(bool){
+		div.addClass('true-c');
+	}else{
+		div.addClass('false-c');
+	}
+	$("body").append(div);
+	div.hide().height(div.height()).css("bottom","0").fadeIn(600);
+	window.setTimeout(function(){
+		div.fadeOut(600,function(){
+			div.remove();
+		});
+	},time);
+}

@@ -17,7 +17,7 @@ $(document).ready(function(){
 });
 
 function tipsBox(bool,text,time){
-	time = time || 3000;
+	time = time || 1000;
 	var div = $('<div class="tipsBox">');
 	div.append('<span>'+text+'</span>');
 	if(bool){

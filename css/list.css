@@ -298,9 +298,39 @@
 }
 .flist_box {
 	border-top: 1px solid #ccc;
-	padding: 1px 0 0 1px;
+	padding: 15px 0;
+	overflow: hidden;
+}
+.hk_person{
+	width: 150px;
+	margin: 5px 0 0 15px;
+}
+.hk_person, .hk_import, .SelectThis{
+	vertical-align: middle;
+	float: left;
 }
 
+.hk_import{
+	overflow: hidden;
+	margin-right: 30px;
+}
+
+.hk_import .left{
+	vertical-align: middle;
+	float: left;
+	line-height: 60px;
+	width: 110px;
+}
+.hk_import .center{
+	vertical-align: middle;
+	text-align: center;
+	float: left;
+}
+.hk_import .right{
+	float: left;
+	width: 120px;
+	margin-top: 5px;
+}
 .flist_box .flist_info, .flist_box .flist_minfo{
 	width: 100%;
 }
@@ -332,10 +362,16 @@
 	color: #06C;
 }
 .morehidden110{
-	width: 80px;
+	width: 100px;
 	line-height: 15px;
 	text-overflow:ellipsis;
 	white-space: nowrap;
+}
+.ta_l{
+	text-align: left;
+}
+.ta_r{
+	text-align: right;
 }
 .d_passBy{
 	display: block;
@@ -346,7 +382,7 @@
 	margin-top: 2px;
 }
 .theFlight_time{
-	margin-top: 25px;
+	margin-top: 5px;
 }
 
 .offarrow{
@@ -370,7 +406,7 @@
 	color: #fff;
 	background-color: #108ee9;
 	font-size: 14px;
-	margin: 2px 15px 0 0;
+	margin: 10px 15px 0 0;
 	line-height: 34px;
 	height: 34px;
 	padding: 0;
@@ -384,8 +420,8 @@
 }
 
 .icon_bag, .icon_paper{
-	padding-left: 30px;
-	margin-bottom: 5px;
+	padding-left: 25px;
+	margin-bottom: 3px;
 	height: 20px;
 	line-height: 20px;
 	background: url(img/icon_search_select.png) no-repeat;
@@ -395,7 +431,7 @@
 	background-position: 1px -59px
 }
 .icon_paper{
-	background-position: 1px -229px
+	background-position: 1px -227px
 }
 
 /*page*/

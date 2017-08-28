@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>BangD-列表页</title>
+		<meta name="keywords"    content="">
+		<meta name="description" content="">
+		<meta name="searchtitle" content="" />
+		<meta name="copyright"   content="" />
+        <link rel="shortcut icon" type="image/x-icon"  href="images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="css/picker.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.nstSlider.min.css">
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/list.js"></script>
+    	<script type="text/javascript" src="js/pagenav.cn.js"></script>
+		<script type="text/javascript" src="js/picker.js"></script>
+        <script type="text/javascript" src="js/jquery.nstSlider.min.js"></script>
+	</head>
+	<body>
+	    <!-- 头部 start-->
+		<div class="head-nav">
+			<div class="container clearfix">
+				<a href="#" class="head-nav-l"><img src="images/logo.png" alt="" /></a>
+				<div class="head-nav-r">
+					<a href="#" class="personPic">您好，<em>李小明</em></a>
+					<a href="#" class="weixin">微信订阅
+						<div class="evm">公众号：<span>BangD-official</span></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	    <!-- 头部 end-->
+		<form id="reSearchForm">
+		    <div id="search_form" class="search_form container clearfix">
+		        <div class="flight_attribute" id="flightTypeList">
+	                <div class="first_line">
+	                    <div class="type_item">
+	                        <span class="ico_search_type ico_search_dcity"></span>
+	                        <input type="text" id="DCityName1" name="DCityName1" mod="address|notice" data-ubt="DCityName1" mod_address_tpl="on" mod_address_reference="DCity1" placeholder="出发城市" mod_address_source="flight_new" autocomplete="on">
+	                    </div>
+	                    <div class="type_item">
+	                        <span class="ico_search_type ico_search_acity"></span>
+	                        <input type="text" id="ACityName1" name="ACityName1" data-ubt="ACityName1" mod_address_reference="ACity1" mod_address_tpl="on" mod="address|notice" mod_address_source="flight_new" placeholder="到达城市" autocomplete="on">
+	                    </div>
+	                    <div class="type_item">
+	                        <span class="ico_search_type  icon ico_calendar"></span>
+	                        <input id="DDate1" name="DDate1" type="text" value="" mod="calendar|notice" placeholder="年/月/日" data-ubt="DDate1" autocomplete="off" >
+	                    </div>
+	                </div>
+		        </div>
+		        <div class="search_tools clearfix" id="searchBtns">
+		            <input type="button" data-ubt="ReSearch" value="重新搜索" style="display: " class="btn_search" id="btnReSearch">
+		            <input type="button" data-ubt="ReSearch" value="发布需求" style="display: " class="btn_search" id="btnReSearch">
+		        </div>
+		    </div>
+		</form>
+		<div class="goCity container">	
+			<div class="goCityList">
+				<a href="#">柏林</a>
+				<a href="#">法兰克福</a>
+				<a href="#">慕尼黑</a>
+				<a href="#">汉堡</a>
+				<a href="#">北京</a>
+				<a href="#">纽约</a>
+				<a href="#">大阪</a>
+				<a href="#">上海</a>
+				<a href="#">华盛顿</a>
+				<a href="#">伦敦</a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="searchLeft">
+				<div class="budget_filter" style="border-left: 0px;">
+					<div class="filter_title">出发日期</div>	
+					<div class="type_item">
+	                    <span class="ico_search_type  icon ico_calendar"></span>
+	                    <input id="datepicker" type="text" placeholder="年/月/日" value="" class="txt txt_calendar">
+	                </div>
+				</div>
+				<div class="budget_filter" style="border-left: 0px;">
+					<div class="filter_title">重量（斤）</div>	
+					<div class="nstSlider" data-range_min="1" data-range_max="20" 
+                       data-cur_min="0"  data-cur_max="20">
+					    <div class="bar"></div>
+					    <div class="leftGrip"></div>
+					    <div class="rightGrip"></div>
+					</div>
+					<div class="budget fl leftLabel"></div>
+					<div class="budget fr rightLabel"></div>
+				</div>
+				<div class="budget_filter" style="border-left: 0px;">
+					<div class="filter_title">价格（欧元）/公斤</div>	
+					<div class="nstSlider" data-range_min="5" data-range_max="50" 
+                       data-cur_min="0"  data-cur_max="50">
+					    <div class="bar"></div>
+					    <div class="leftGrip"></div>
+					    <div class="rightGrip"></div>
+					</div>
+					<div class="budget fl leftLabel"></div>
+					<div class="budget fr rightLabel"></div>
+				</div>
+				<div class="budget_filter" style="border-left: 0px;">
+					<div class="filter_title">收件方式</div>	
+					<div class="filterGo">
+						<label class="cur"><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">自提</label>
+						<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">邮寄</label>
+						<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">私聊</label>
+					</div>
+				</div>
+				<div class="budget_filter" style="border-left: 0px;">
+					<div class="filter_title">投递方式</div>	
+					<div class="filterGo">
+						<label class="cur"><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">自提</label>
+						<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">邮寄</label>
+						<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">私聊</label>
+					</div>
+				</div>
+				<div class="budget_filter" style="border-left: 0px;">
+					<div class="filter_title">同程看护</div>	
+					<div class="filterGo">
+						<label class="cur"><i class="icon ico_checkbox"></i><input name="area-filter" value="all" class="checkbox" type="checkbox" checked="checked">老人</label>
+						<label><i class="icon ico_checkbox"></i><input name="area-filter" value="all" class="checkbox" type="checkbox" checked="">小孩</label>
+					</div>
+				</div>
+				<div class="budget_filter" style="border-left: 0px;">
+					<div class="filter_title">海淘帮带（公斤）</div>
+					<div class="nstSlider" data-range_min="1" data-range_max="50" 
+                       data-cur_min="0"  data-cur_max="50">
+					    <div class="bar"></div>
+					    <div class="leftGrip"></div>
+					    <div class="rightGrip"></div>
+					</div>
+					<div class="budget fl leftLabel"></div>
+					<div class="budget fr rightLabel"></div>
+				</div>
+			</div>
+			<div class="searchR_content choose_type_m">
+				<div class="searchR_part clearfix">
+					<div class="searchR_num">为您找到<em>56</em>个搜索结果</div>				
+					<div class="dropDown">
+						  <input class="putIn" readonly="readonly" type="text" value="排序1"/>
+						  <span class="dropBtn"><s></s></span>
+						  <ul class="dropList">
+							  <li>排序1</li>
+							  <li>排序2</li>
+							  <li>排序3</li>
+						  </ul>
+					 </div>
+				</div>
+				<div class="flight-list-content">
+					<div class="flist_list">
+						<div class="flist_box">
+							<div class="hk_person">
+								<div class="hk_part1">
+									<img class="personLogo" src="images/touxiang.jpg">
+									<div>Qing Xu</div>
+									<div>Berlin, Deu</div>
+								</div>
+								<div class="hk_part2">Publish：<em class="link_borbot">2 days ago</em></div>
+							</div>
+							<div class="hk_import clearfix">
+								<div class="clearfix">
+									<div class="left ta_r f_size14">Berlin</div>
+									<div class="center">
+										<div class="f_size14 morehidden110 theFlight_time">起</div>
+										<div class="offarrow"></div>
+										<div class="f_size14 morehidden110">2017 Mai. 24</div>
+									</div>
+									<div class="left ta_l f_size14">BeiJing</div>
+									<div class="right">
+										<div class="icon_paper f_size14"></div>
+										<div class="f_size16"><em>8</em>euro/份</div>
+									</div>
+								</div>
+								<div class="clearfix">
+									<div class="left ta_r f_size14">Berlin</div>
+									<div class="center">
+										<div class="f_size14 morehidden110 theFlight_time">返</div>
+										<div class="getarrow"></div>
+										<div class="f_size14 morehidden110">2017 Mai. 28</div>
+									</div>
+									<div class="left ta_l f_size14">BeiJing</div>
+									<div class="right">
+										<div class="icon_bag">>10kg</div>
+										<div class="f_size16"><em>8</em>euro/kg</div>
+									</div>
+								</div>
+							</div>
+							<a class="SelectThis" href="#">选择</a>
+						</div>
+					</div>
+					<div class="flist_list">
+						<div class="flist_box">
+							<div class="hk_person">
+								<div class="hk_part1">
+									<img class="personLogo" src="images/touxiang.jpg">
+									<div>Qing Xu</div>
+									<div>Berlin, Deu</div>
+								</div>
+								<div class="hk_part2">Publish：<em class="link_borbot">2 days ago</em></div>
+							</div>
+							<div class="hk_import clearfix">
+								<div class="clearfix">
+									<div class="left ta_r f_size14">Berlin</div>
+									<div class="center">
+										<div class="f_size14 morehidden110 theFlight_time">起</div>
+										<div class="offarrow"></div>
+										<div class="f_size14 morehidden110">2017 Mai. 24</div>
+									</div>
+									<div class="left ta_l f_size14">BeiJing</div>
+									<div class="right">
+										<div class="icon_paper f_size14"></div>
+										<div class="f_size16"><em>8</em>euro/份</div>
+									</div>
+								</div>
+							</div>
+							<a class="SelectThis" href="#">选择</a>
+						</div>
+					</div>
+					<div class="flist_list">
+						<div class="flist_box">
+							<div class="hk_person">
+								<div class="hk_part1">
+									<img class="personLogo" src="images/touxiang.jpg">
+									<div>Qing Xu</div>
+									<div>Berlin, Deu</div>
+								</div>
+								<div class="hk_part2">Publish：<em class="link_borbot">2 days ago</em></div>
+							</div>
+							<div class="hk_import clearfix">
+								<div class="clearfix">
+									<div class="left ta_r f_size14">Berlin</div>
+									<div class="center">
+										<div class="f_size14 morehidden110 theFlight_time">起</div>
+										<div class="offarrow"></div>
+										<div class="f_size14 morehidden110">2017 Mai. 24</div>
+									</div>
+									<div class="left ta_l f_size14">BeiJing</div>
+									<div class="right">
+										<div class="icon_paper f_size14"></div>
+										<div class="f_size16"><em>8</em>euro/份</div>
+									</div>
+								</div>
+							</div>
+							<a class="SelectThis" href="#">选择</a>
+						</div>
+					</div>
+                    <!--分页-->
+                    <div class="pageNav" id="pageNav"></div>
+				</div>
+			</div>
+		</div>
+	    <!-- 底部 start-->
+		<div class="footer clearfix">
+			<div class="container">
+				<div class="footer-left">
+					<ul>
+						<li><a href="#">关于BangD</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">团队介绍</a></li>
+						<li><a href="#">隐私申明</a></li>
+						<li><a href="#">合作伙伴</a></li>
+						<li><a href="#">意见反馈</a></li>
+					</ul>
+					<span>Copyright © 2017-2020 BANGD　|　沪ICP备12345678号-1</span>
+				</div>
+				<div class="footer-right">
+					<div class="ftop">400 888 8888<span> | </span>021-88888888</div>
+					<div class="fcen">服务时间 9:00 — 20:00 <span>7 X 9 X 365</span></div>
+					<div>邮箱 help@BangD.com</div>
+				</div>
+			</div>
+		</div>
+	    <!-- 底部 end-->
+</div>
+<script>
+        window.onload = (function(){
+            var pageNav = new pageNavBox($("#pageNav"));
+            pageNav.go(1,10,50);
+            pageNav.fn = function(p,pn,pl){
+              //alert("第"+p+"页,共"+pn+"页,共"+pl+"条数据");
+            }
+        });
+		$( "#datepicker" ).datepicker({
+			inline: false,
+		    minDate: new Date()
+		});
+
+		$('.nstSlider').nstSlider({
+		    "rounding": {
+		        "1": "50"
+		    },
+		    "left_grip_selector": ".leftGrip",
+		    "right_grip_selector": ".rightGrip",
+		    "value_bar_selector": ".bar",
+		    "value_changed_callback": function(cause, leftValue, rightValue) {
+		        var $container = $(this).parent();
+		        $container.find('.leftLabel').text(leftValue);
+		        $container.find('.rightLabel').text(rightValue);
+		    }
+		});
+</script>
+</body>
+</html>

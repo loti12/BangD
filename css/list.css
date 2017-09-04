@@ -86,11 +86,11 @@
 
 .goCity a{
 	background-color: #fff;
-	font-size: 14px;
+	font-size: 12px;
 	margin-left: 10px;
 	line-height: 34px;
 	height: 34px;
-	padding: 6px 12px;
+	padding: 5px 10px;
 	text-align: center;
 	border: 1px solid #ccc;
 	box-shadow: none;
@@ -329,6 +329,7 @@
 .hk_import .right{
 	float: left;
 	width: 120px;
+	padding-left: 30px;
 	margin-top: 5px;
 }
 .flist_box .flist_info, .flist_box .flist_minfo{

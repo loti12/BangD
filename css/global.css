@@ -79,10 +79,35 @@ img{vertical-align:top;border:none}
 .head-nav{width:100%;height:65px;line-height:65px;padding:8px 0px;background: #fff;border-bottom:1px solid #e4e4e4;-moz-box-shadow:0 2px 3px #e4e4e4;box-shadow:0 2px 3px #e4e4e4;position: relative;*z-index:99;}
 .head-nav-l{width:450px;float: left;}
 .head-nav-r{width:550px;float: right;text-align:right;}
-.head-nav-r a{display:inline-block;*display:inline;zoom:1;font-size: 14px;color: #7c7c7d;padding-left:20px;}
-.head-nav-r .weixin{position: relative;}
-.head-nav-r .weixin .evm{width:164px;height:29px;line-height:20px;font-size:12px;font-family:"Microsoft Yahei";text-align:center;padding-top:170px;background: url(../images/2code.png) no-repeat center bottom;position: absolute;top:42px;right:-4px;z-index:99;display:none;}
-.head-nav-r .weixin:hover .evm{display: block;}
+.head-nav-r a, 
+.head-nav-r .down, 
+.head-nav-r .weixin{
+    position: relative;
+    padding-left:20px;
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    color: #7c7c7d;
+    font-size: 14px;
+}
+.head-nav-r .weixin:hover .downCon, 
+.head-nav-r .down:hover .downCon{display: block;}
+
+.downCon{display:none;width:220px;height:102px;padding:10px;background:#fff;position:absolute;right:0;top:56px;border:1px solid #e4e4e4;z-index:1000;}
+.downCon .txt{line-height: 20px;font-size: 12px;}
+.downCon-txt{color:#666; height:90px; margin-top:0px;width:110px;text-align: center}
+.downCon-txt img{height: 90px;}
+.downCon-txt span{margin-bottom:5px;font-size:12px;line-height:24px;display: block;text-align: center}
+.downCon-txt a{padding:0;width:110px; height:28px;font-size: 12px; border-radius:5px; display:block; color:#fff; line-height:28px; text-align:center; margin-bottom:5px;}
+.downCon-txt a.an-btn{background:#89bf47;}
+.downCon-txt a.an-iph{background:#1f7ec9;}
+.downCon .h-arrow{display: block;position: absolute;right: 30px;top: -8px;z-index:1;width: 0;height: 0;border-left: 7px solid transparent;border-right: 7px solid transparent;border-bottom: 7px solid #ccc;font-size: 12px}
+.downCon .h-arrow:after{content: "";display: block;position: absolute;left: -7px;top: 1px;z-index:1;width: 0;height: 0;border-left: 7px solid transparent;border-right: 7px solid transparent;border-bottom: 7px solid #fff;}
+.downCon a.an-btn:hover{background:#b5db86;}
+.downCon a.an-iph:hover{background:#62b5f1;}
+.downCon-right{width:110px; height:90px;text-align: center;font-size: 12px;}
+.downCon-right img{height: 90px;}
+
 
 /* main */
 .main{margin-top:80px;padding:50px 0px;border:1px solid #dbdadb;background: #fff;position: relative;}

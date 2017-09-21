@@ -1025,7 +1025,6 @@ a {
 }
 
 .container {
-	overflow: hidden;
 	margin: 0 auto;
 	width: 1100px;
 }
@@ -2689,8 +2688,6 @@ a {
 	}
 }
 
-
-
 /*start payment*/
 .intro_con{
     background-color: #fff;
@@ -2867,7 +2864,7 @@ a {
         text-align: left;
     }
     .entersteps-content .entersteps-list ul li {
-        width: 260px;
+        width: 170px;
         float: left;
         border-top: 1px solid #108ee9;
         padding-right: 105px;
@@ -2921,15 +2918,17 @@ a {
     .entersteps-content .entersteps-list ul .entersteps-li-three:before {
         content: "3";
     }
+    .entersteps-content .entersteps-list ul .entersteps-li-four:before {
+        content: "4";
+    }
     .entersteps-list{
         position: relative;
         display: inline-block;
     }
     .entersteps-list:before{
-        content: "";
+        content: "OK";
         width: 26px;
         height: 26px;
-        background: url("https://private.alipayobjects.com/alipay-rmsdeploy-image/rmsportal/vJRTXhwpmfOheaScAmyH.png") no-repeat 7px center ;
         position: absolute;
         top: -15px;
         right: 0;
@@ -2978,10 +2977,7 @@ a {
 	line-height: 38px;
 	color: #fff;
 }
-
-
 .hot_city a{
 	color: #fff;
 	padding-right: 15px;
 }
-

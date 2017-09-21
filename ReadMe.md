@@ -8,11 +8,12 @@
 
 首页：index.html
 列表及搜索：list.html
-列表及搜索（新）：list.html
+列表及搜索（新）：list_new.html
 详情页：detail.html
 发布页：post_1.html
 发布页：post_2.html
 发布页：post_3.html
+发布页（总合）：post.html
 
 个人中心-基本资料：member_index.html
 个人中心_修改密码：member_pass.html

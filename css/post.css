@@ -1,3 +1,6 @@
+.progress_result{
+	margin:10px 0;
+}
 .step_list{
 	width: 1100px; 
 	margin: 0 auto; 
@@ -62,19 +65,22 @@
 .post{
 	background: #fff;
 	border: 1px solid #efefef;
-	padding-bottom: 40px;
+	/* padding-bottom: 40px; */
 	min-height: 500px;
 }
 
 .form_title{
-	background: #efefef;
+	background: #108ee9;
+	border: 1px solid #108ee9;
+	color: #fff;
 	height: 40px;
 	line-height: 40px;
-	padding-left: 15px;
+	padding-left: 35px;
 	font-size: 14px;
+	font-weight: bold
 }
 .form_content{
-	padding: 15px;
+	padding: 0 15px;
 }
 .form_fields{
 	overflow: hidden;
@@ -142,15 +148,15 @@
 	width: 223px;
 }
 .form_fields_con{
-	margin: 30px 0;
+	margin: 20px 0;
 }
 .tc .con_btn{
 	padding:0 50px;
-	margin: 0 20px;
+	margin: 20px;
 	font-size: 14px;
 }
 .form_content .budget_filter{
-	padding-left: 20px;
+	padding: 10px 0 10px 20px
 }
 .form_content .budget_filter .filter_title{
 	margin-top: 15px;

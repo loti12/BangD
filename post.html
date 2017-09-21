@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>BangD-发布</title>
+<meta name="keywords"    content="">
+<meta name="description" content="">
+<meta name="searchtitle" content="" />
+<meta name="copyright"   content="" />
+<link rel="stylesheet" type="text/css" href="css/global.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<link rel="stylesheet" type="text/css" href="css/list.css"/>
+<link rel="stylesheet" type="text/css" href="css/post.css"/>
+<link rel="stylesheet" type="text/css" href="css/picker.css"/>
+<link rel="stylesheet" type="text/css" href="css/test.css" />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/list.js"></script>
+<script type="text/javascript" src="js/picker.js"></script>
+</head>
+<body>
+	<!-- 头部 start-->
+	<div class="head-nav">
+		<div class="container clearfix">
+			<a href="#" class="head-nav-l"><img src="images/logo.png" alt="" /></a>
+			<div class="head-nav-r">
+				<a href="#" class="con_btn" target="_blank">发布需求</a>
+				<!-- 未登录 -->
+				<a href="login.html">登录</a>
+				<a href="register.html">注册</a>
+				<!-- 已登录 -->
+				<!-- <a href="#" class="personPic">您好，<em>李小明</em></a> -->
+				<div href="#" class="weixin">
+					<span>微信订阅</span>
+					<div class="downCon">
+						<i class="h-arrow"></i>
+						<div class="downCon-txt fl">
+							<img src="images/2code.png"> 
+							<div class="txt">订阅号:BangD</div>
+						</div>
+						<div class="downCon-right fl">
+							<img src="images/2code.png">
+							<div class="txt">公众号:BangD-off</div>
+						</div>
+					</div>
+				</div>
+				<div href="#" class="down">
+					<span>APP下载</span>
+					<div class="downCon">
+						<i class="h-arrow"></i>
+						<div class="downCon-txt fl">
+							<span>帮带官方App</span>
+							<a rel="nofollow" href="#" class="an-btn" target="_blank">Android版下载</a>
+							<a rel="nofollow" href="#" class="an-iph" target="_blank">iPhone版下载</a>
+						</div>
+						<div class="downCon-right fr">
+							<img src="images/2code.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 头部 end-->
+	<div class="container">
+        <!-- 航程 -->
+		<div class="progress_result">
+			<div class="post post_1 clearfix">
+				<div class="form_title">航程</div>
+				<div class="form_content">
+					<div class="form_fields">
+						<span class="cur">单程</span><span>往返</span>
+					</div>	
+					<div class="form_fields_con single">
+				        <div class="flight_attribute ">
+			                <div class="first_line">
+			                    <div class="type_item">
+			                        <span class="ico_search_type ico_search_dcity"></span>
+			                        <input type="text" id="DCityName1" name="DCityName1" mod="address|notice" data-ubt="DCityName1" mod_address_tpl="on" mod_address_reference="DCity1" placeholder="出发城市" mod_address_source="flight_new" autocomplete="on">
+			                    </div>
+			                    <div class="type_item">
+			                        <span class="ico_search_type  icon ico_calendar"></span>
+			                        <input id="datepicker" type="text" placeholder="年/月/日" value="" class="txt txt_calendar">
+			                    </div>
+			                </div>
+				        </div>
+				        <div class="flight_attribute">
+			                <div class="first_line">
+			                    <div class="type_item">
+			                        <span class="ico_search_type ico_search_acity"></span>
+			                        <input type="text" id="ACityName1" name="ACityName1" data-ubt="ACityName1" mod_address_reference="ACity1" mod_address_tpl="on" mod="address|notice" mod_address_source="flight_new" placeholder="到达城市" autocomplete="on">
+			                    </div>
+			                    <div class="type_item">
+			                        <span class="ico_search_type  icon ico_calendar"></span>
+			                        <input id="datepicker2" type="text" placeholder="年/月/日" value="" class="txt txt_calendar">
+			                    </div>
+			                </div>
+				        </div>
+				        <div class="flight_attribute flight_num">
+			                <div class="first_line">
+			                    <div class="type_item">
+			                        <input id="" class="fnum" type="text" value="" placeholder="请填写交接国家">
+			                    </div>
+			                    <div class="type_item">
+			                        <input id="" class="fnum" type="text" value="" placeholder="请填写航班号">
+			                    </div>
+							 </div>
+				        </div>
+					</div>
+					<div class="form_fields_con odd">
+				        <div class="flight_attribute ">
+			                <div class="first_line">
+			                    <div class="type_item">
+			                        <span class="ico_search_type ico_search_dcity"></span>
+			                        <input type="text" id="DCityName1" name="DCityName1" mod="address|notice" data-ubt="DCityName1" mod_address_tpl="on" mod_address_reference="DCity1" placeholder="出发城市" mod_address_source="flight_new" autocomplete="on">
+			                    </div>
+			                    <div class="type_item">
+			                        <span class="ico_search_type  icon ico_calendar"></span>
+			                        <input id="datepicker" type="text" placeholder="年/月/日" value="" class="txt txt_calendar">
+			                    </div>
+			                </div>
+				        </div>
+				        <div class="flight_attribute">
+			                <div class="first_line">
+			                    <div class="type_item">
+			                        <span class="ico_search_type ico_search_acity"></span>
+			                        <input type="text" id="ACityName1" name="ACityName1" data-ubt="ACityName1" mod_address_reference="ACity1" mod_address_tpl="on" mod="address|notice" mod_address_source="flight_new" placeholder="到达城市" autocomplete="on">
+			                    </div>
+			                    <div class="type_item">
+			                        <span class="ico_search_type  icon ico_calendar"></span>
+			                        <input id="datepicker" type="text" placeholder="年/月/日" value="" class="txt txt_calendar">
+			                    </div>
+			                </div>
+				        </div>
+				        <div class="flight_attribute flight_num">
+			                <div class="first_line">
+			                    <div class="type_item">
+			                        <input id="" class="fnum" type="text" value="" placeholder="请填写交接国家">
+			                    </div>
+			                    <div class="type_item">
+			                        <input id="" class="fnum" type="text" value="" placeholder="请填写航班号">
+			                    </div>
+							 </div>
+				        </div>
+					</div>
+				</div>
+				<div class="form_content">
+					<div class="form_fields_con">
+				        <div class="flight_attribute flight_num">
+			                <div class="first_line">
+			                    <div class="type_item">
+			                        <input id="" class="fnum" type="text" value="" placeholder="交接国家">
+			                    </div>
+			                    <div class="type_item">
+			                        <input id="" class="fnum" type="text" value="" placeholder="交接城市（*必填）">
+			                    </div>
+							 </div>
+				        </div>
+				        <div class="flight_attribute flight_num">
+			                <div class="first_line">
+			                    <div class="type_item">
+			                        <input id="" class="fnum" type="text" value="" placeholder="交接国家">
+			                    </div>
+			                    <div class="type_item">
+			                        <input id="" class="fnum" type="text" value="" placeholder="交接城市（*可填）">
+			                    </div>
+							 </div>
+				        </div>
+				        <div class="flight_attribute flight_num">
+			                <div class="first_line">
+			                    <div class="type_item">
+			                        <input id="" class="fnum" type="text" value="" placeholder="交接国家">
+			                    </div>
+			                    <div class="type_item">
+			                        <input id="" class="fnum" type="text" value="" placeholder="交接城市（*可填）">
+			                    </div>
+							 </div>
+				        </div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <!-- 物件 -->
+		<div class="progress_result">
+			<div class="post post_1 clearfix">
+				<div class="form_title">物件</div>
+				<div class="form_content">
+					<div class="budget_filter" style="border-left: 0px;">
+						<div class="filter_title">可带贵重物品</div>	
+						<div class="filterGo">
+							<label class="cur"><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">是</label>
+							<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">否</label>
+						</div>
+						<div class="filter_title">取件</div>	
+						<div class="filterGo">
+							<label class="cur"><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">自提</label>
+							<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">邮寄</label>
+							<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">私聊</label>
+						</div>
+						<div class="filter_title">交货</div>	
+						<div class="filterGo">
+							<label class="cur"><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">自提</label>
+							<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">邮寄</label>
+							<label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">私聊</label>
+						</div>
+					</div>
+				</div>
+				<div class="form_content">
+					<div class="budget_filter" style="border-left: 0px;">
+						<div class="filter_title">价格</div>	
+
+						<div class="form_fields_con">
+					        <div class="flight_attribute flight_num">
+				                <div class="first_line">
+				                    <div class="type_item">
+				                        <input id="" class="fnum" type="text" value="" placeholder="普通物品/公斤（8欧）">
+				                    </div>
+									<div class="type_item dropDown">
+										  <input class="putIn" readonly="readonly" type="text" value="" placeholder="欧元"/>
+										  <span class="dropBtn"><s></s></span>
+										  <ul class="dropList">
+											  <li>私聊</li>
+											  <li>欧元</li>
+											  <li>人民币</li>
+										  </ul>
+									 </div>
+								 </div>
+					        </div>
+					        <div class="flight_attribute flight_num">
+				                <div class="first_line">
+				                    <div class="type_item">
+				                        <input id="" class="fnum" type="text" value="" placeholder="文件（20欧）">
+				                    </div>
+									<div class="type_item dropDown">
+										  <input class="putIn" readonly="readonly" type="text" value="" placeholder="欧元"/>
+										  <span class="dropBtn"><s></s></span>
+										  <ul class="dropList">
+											  <li>私聊</li>
+											  <li>欧元</li>
+											  <li>人民币</li>
+										  </ul>
+									 </div>
+								 </div>
+					        </div>
+					        <div class="flight_attribute flight_num">
+				                <div class="first_line">
+				                    <div class="type_item">
+				                        <input id="" class="fnum" type="text" value="" placeholder="贵重物品">
+				                    </div>
+									<div class="type_item dropDown">
+										  <input class="putIn" readonly="readonly" type="text" value="" placeholder="私聊"/>
+										  <span class="dropBtn"><s></s></span>
+										  <ul class="dropList">
+											  <li>私聊</li>
+											  <li>欧元</li>
+											  <li>人民币</li>
+										  </ul>
+									 </div>
+								 </div>
+					        </div>
+						</div>
+					</div>
+				</div>
+				<div class="form_content">
+					<div class="budget_filter" style="border-left: 0px;">
+						<div class="filter_title">说明</div>	
+						<textarea rows="5" cols="142" placeholder="在BangD网站，你可以找到你所需要的所有的帮带物品需求。"></textarea>
+					</div>
+				</div>
+				<div class="form_content">
+					<div class="form_fields_con single">
+				        <div class="flight_attribute flight_num">
+			                <div class="first_line">
+			                    <div class="type_item">
+			                        单程：<input id="" class="fnum" type="text" value="" placeholder="估算可带重量（kg），例如：20kg">
+			                    </div>
+			                    <div class="type_item">
+			                        手提：<input id="" class="fnum" type="text" value="" placeholder="手提重量">
+			                    </div>
+			                    <div class="type_item">
+			                        托运：<input id="" class="fnum" type="text" value="" placeholder="托运重量">
+			                    </div>
+							 </div>
+				        </div>
+				        <div class="flight_attribute flight_num">
+			                <div class="first_line">
+			                    <div class="type_item">
+			                        回程：<input id="" class="fnum" type="text" value="" placeholder="估算可带重量（kg），例如：20kg">
+			                    </div>
+			                    <div class="type_item">
+			                        手提：<input id="" class="fnum" type="text" value="" placeholder="手提重量">
+			                    </div>
+			                    <div class="type_item">
+			                        托运：<input id="" class="fnum" type="text" value="" placeholder="托运重量">
+			                    </div>
+							 </div>
+				        </div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <!-- 其它 -->
+		<div class="progress_result">
+                <div class="post post_1 clearfix">
+                    <div class="form_title">其它（*可选）</div>
+                    <div class="form_content">
+                        <div class="budget_filter" style="border-left: 0px;">
+                            <div class="filter_title">同程看护老人家？</div>	
+                            <div class="filterGo">
+                                <label class="cur"><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">是</label>
+                                <label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">否</label>
+                                <label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">私聊</label>
+                            </div>
+                            <div class="filter_title">同程看护小孩？</div>	
+                            <div class="filterGo">
+                                <label class="cur"><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">是</label>
+                                <label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">否</label>
+                                <label><i class="icon ico_radio"></i><input name="area-filter" value="all" class="radio" type="radio" checked="">私聊</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_content">
+                        <div class="budget_filter" style="border-left: 0px;">
+                            <div class="filter_title">说明</div>	
+                            <textarea rows="5" cols="142" placeholder="您可以在这里给出更多说明 ..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form_content">
+                        <div class="budget_filter" style="text-align:center;">
+                            <label class="firstRegchk">
+                                <input type="checkbox" id="first-register" checked="checked" style="margin-right:5px;">发布信息，需同意帮带<a href="statement.html" target="_blank" style="color:#108ee9">《免责申明》</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tc"><a href="#" class="con_btn">发布</a></div>
+                </div>
+            </div>
+	</div>
+	<div class="footer clearfix">
+		<div class="container">
+			<div class="footer-left">
+				<ul>
+					<li><a href="#">关于BangD</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">团队介绍</a></li>
+					<li><a href="#">隐私申明</a></li>
+					<li><a href="#">合作伙伴</a></li>
+					<li><a href="#">意见反馈</a></li>
+				</ul>
+				<span>Copyright © 2017-2020 BANGD　|　沪ICP备12345678号-1</span>
+			</div>
+			<div class="footer-right">
+				<div class="ftop">400 888 8888<span> | </span>021-88888888</div>
+				<div class="fcen">服务时间 9:00 — 20:00 <span>7 X 9 X 365</span></div>
+				<div>邮箱 help@BangD.com</div>
+			</div>
+		</div>
+	</div>
+	<div id="" class="mNotice-wrap hotel_s_warp">
+		<span class="mNotice-arrows"></span>
+		<div class="mNotice-mTab">
+			<h4 class="mNotice-mTab-head">热门城市
+				<span class="mNotice-mTab-head-remark">（可直接选择城市或输入城市中文/拼音）</span>
+				<span class="mNotice-close white"></span>
+			</h4>
+			<div class="mNotice-mTab-wrap">
+				<ul class="mNotice-mTab-tab-tray clearfix">
+					<li class="mNotice-mTab-item current">国内热门</li>
+					<li class="mNotice-mTab-item">国际热门</li>
+					<li class="mNotice-mTab-item ">亚洲</li>
+					<li class="mNotice-mTab-item ">欧洲</li>
+					<li class="mNotice-mTab-item ">美洲</li>
+					<li class="mNotice-mTab-item ">非洲</li>
+					<li class="mNotice-mTab-item ">大洋洲</li>
+				</ul>
+				<div class="mNotice-mTab-content clearfix">
+					<span class="mNotice-normal mNotice-fixWidth" title="北京">北京</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="上海">上海</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="广州">广州</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="深圳">深圳</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="成都">成都</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="西安">西安</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="杭州">杭州</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="武汉">武汉</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="长沙">长沙</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="重庆">重庆</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="青岛">青岛</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="南京">南京</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="厦门">厦门</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="昆明">昆明</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="大连">大连</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="三亚">三亚</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="天津">天津</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="哈尔滨">哈尔滨</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="呼和浩特">呼和浩特</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="上海浦东">上海浦东</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="温州">温州</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="沈阳">沈阳</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="北京南苑">北京南苑</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="北京首都">北京首都</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="上海虹桥">上海虹桥</span>
+				</div>
+				<div class="mNotice-mTab-content none">
+					<span class="mNotice-normal mNotice-fixWidth" title="国际热门1">国际热门1</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="国际热门2">国际热门2</span>
+				</div>
+				<div class="mNotice-mTab-content none">
+					<span class="mNotice-normal mNotice-fixWidth" title="亚洲1">亚洲1</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="亚洲2">亚洲2</span>
+				</div>
+				<div class="mNotice-mTab-content none">
+					<span class="mNotice-normal mNotice-fixWidth" title="欧洲1">欧洲1</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="欧洲2">欧洲2</span>
+				</div>
+				<div class="mNotice-mTab-content none">
+					<span class="mNotice-normal mNotice-fixWidth" title="美洲1">美洲1</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="美洲2">美洲2</span>
+				</div>
+				<div class="mNotice-mTab-content none">
+					<span class="mNotice-normal mNotice-fixWidth" title="非洲1">非洲1</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="非洲2">非洲2</span>
+				</div>
+				<div class="mNotice-mTab-content none">
+					<span class="mNotice-normal mNotice-fixWidth" title="大洋洲1">大洋洲1</span>
+					<span class="mNotice-normal mNotice-fixWidth" title="大洋洲2">大洋洲2</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('.con_btn').click(function(){
+			tipsBox(false,"请选择出发城市！");
+		})
+		$(document).ready(function () {
+			$( "#datepicker" ).datepicker({
+				inline: false,
+				minDate: new Date()
+			});
+
+			$('.mNotice-mTab-tab-tray li').click(function(){
+				var index = $(this).index();
+				$(this).attr('class',"mNotice-mTab-item current").siblings('li').attr('class','mNotice-mTab-item');
+				$('.mNotice-mTab-content').eq(index).show(200).siblings('.mNotice-mTab-content').hide();
+			});
+
+			$('#DCityName1').focus(function(){
+				$('.mNotice-wrap').css('display','block');
+			});
+			$('#DCityName1').blur(function(){
+				if ('.mNotice-wrap') {
+					$('.mNotice-wrap').css('display','block');
+						$(".mNotice-wrap").mouseleave(function(){
+							$(this).css('display', 'none')
+						});
+				}else{
+					$('.mNotice-wrap').css('display','none');
+				}
+			});
+
+		})
+	</script>
+</body>
+</html>

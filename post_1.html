@@ -207,7 +207,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="" class="mNotice-wrap hotel_s_warp">
+	<div class="mNotice-wrap hotel_s_warp">
 		<span class="mNotice-arrows"></span>
 		<div class="mNotice-mTab">
 			<h4 class="mNotice-mTab-head">热门城市
@@ -278,6 +278,23 @@
 			</div>
 		</div>
 	</div>
+	<div class="city_s_warp">
+		<div id="sugContainer" class="com_results">
+			<ul method="cityData">
+				<li name="suggestion" class="" title="博鳌国际机场" data="0" method="liData">博鳌国际机场(BAR)</li>
+				<li name="suggestion" class="" title="新白云国际机场" data="1" method="liData">新白云国际机场(CAN)</li>
+				<li name="suggestion" class="" title="西双版纳机场" data="2" method="liData">西双版纳机场(JHG)</li>
+				<li name="suggestion" class="" title="香港巴士站（南航专用）" data="3" method="liData">香港巴士站（南航专用）(HHK)</li>
+				<li name="suggestion" class="" title="二里半机场" data="4" method="liData">二里半机场(BAV)</li>
+				<li name="suggestion" class="" title="福成机场" data="5" method="liData">福成机场(BHY)</li>
+				<li name="suggestion" class="" title="保山机场" data="6" method="liData">保山机场(BSD)</li>
+				<li name="suggestion" class="" title="长白山机场" data="7" method="liData">长白山机场(NBS)</li>
+				<li name="suggestion" class="" title="昌都邦达机场" data="8" method="liData">昌都邦达机场(BPX)</li>
+				<li name="suggestion" class="" title="保安营机场" data="9" method="liData">保安营机场(PZI)</li>
+				<li name="suggestion" class="nofind" title="" data="9" method="liData">对不起，找不到xxx!</li>
+			</ul>
+		</div>
+	</div>
 	<script>
 		$('.con_btn').click(function(){
 			tipsBox(false,"请选择出发城市！");
@@ -295,18 +312,21 @@
 			});
 
 			$('#DCityName1').focus(function(){
-				$('.mNotice-wrap').css('display','block');
+				$('.hotel_s_warp, .city_s_warp').css('display','block');
 			});
 			$('#DCityName1').blur(function(){
-				if ('.mNotice-wrap') {
-					$('.mNotice-wrap').css('display','block');
-						$(".mNotice-wrap").mouseleave(function(){
+				if ('hotel_s_warp, .city_s_warp') {
+					$('hotel_s_warp, .city_s_warp').css('display','block');
+						$("hotel_s_warp, .city_s_warp").mouseleave(function(){
 							$(this).css('display', 'none')
 						});
 				}else{
-					$('.mNotice-wrap').css('display','none');
+					$('hotel_s_warp, .city_s_warp').css('display','none');
 				}
 			});
+			$(".city_s_warp li, .mNotice-mTab-content span").click(function() {
+				$("#DCityName1").val($(this).html());
+			}); 
 
 		})
 	</script>

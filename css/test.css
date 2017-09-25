@@ -158,5 +158,4 @@ body .mNotice-wrap{position:absolute;top:322px;left:126px;z-index:2000;width:aut
 .com_results{width:300px;padding:3px;margin:0px;z-index:100;font-size:12px;border:#C5C5C5 solid 1px;background:#FFF;box-shadow:2px 2px 6px 0px rgba(0,0,0,0.2);color:#555;}
 .com_results ul {width:100%;list-style-position:outside;list-style:none;padding:0;margin:0;}
 .com_results li {margin:0px;padding:4px 5px;height:20px;cursor:pointer;display:block;font-size:12px;line-height:20px;overflow:hidden;text-align:left;}
-.com_results li.nofind{color: red;}
-.ac_results li {text-align:left;height:auto;}
+.com_results .nofind{padding-left: 5px;color: red;line-height: 30px;}

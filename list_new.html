@@ -11,12 +11,12 @@
 		<link rel="stylesheet" type="text/css" href="css/global.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/list.css"/>
-		<link rel="stylesheet" type="text/css" href="css/picker.css"/>
+		<link rel="stylesheet" type="text/css" href="css/asDatepicker.css"/>
         <link rel="stylesheet" type="text/css" href="css/jquery.nstSlider.min.css">
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/list.js"></script>
-    	<script type="text/javascript" src="js/pagenav.cn.js"></script>
-		<script type="text/javascript" src="js/picker.js"></script>
+		<script type="text/javascript" src="js/pagenav.cn.js"></script>
+		<script type="text/javascript" src="js/asDatepicker.js"></script>
         <script type="text/javascript" src="js/jquery.nstSlider.min.js"></script>
 	</head>
 	<body>
@@ -75,10 +75,10 @@
 	                        <span class="ico_search_type ico_search_acity"></span>
 	                        <input type="text" id="ACityName1" name="ACityName1" data-ubt="ACityName1" mod_address_reference="ACity1" mod_address_tpl="on" mod="address|notice" mod_address_source="flight_new" placeholder="到达城市" autocomplete="on">
 	                    </div>
-	                    <div class="type_item">
-	                        <span class="ico_search_type  icon ico_calendar"></span>
-	                        <input id="DDate1" name="DDate1" type="text" value="" mod="calendar|notice" placeholder="年/月/日" data-ubt="DDate1" autocomplete="off" >
-	                    </div>
+						<div class="type_item ">
+							<i class="icon ico_calendar"></i>
+							<input type="text" id="calendar" class="calendar-input" placeholder="请选择日期范围">
+						</div>
 	                </div>
 		        </div>
 		        <div class="search_tools clearfix" id="searchBtns">
@@ -307,31 +307,31 @@
 	    <!-- 底部 end-->
 </div>
 <script>
-        window.onload = (function(){
-            var pageNav = new pageNavBox($("#pageNav"));
-            pageNav.go(1,10,50);
-            pageNav.fn = function(p,pn,pl){
-              //alert("第"+p+"页,共"+pn+"页,共"+pl+"条数据");
-            }
-        });
-		$( "#datepicker" ).datepicker({
-			inline: false,
-		    minDate: new Date()
-		});
+	window.onload = (function(){
+		var pageNav = new pageNavBox($("#pageNav"));
+		pageNav.go(1,10,50);
+		pageNav.fn = function(p,pn,pl){
+			//alert("第"+p+"页,共"+pn+"页,共"+pl+"条数据");
+		}
+	});
 
-		$('.nstSlider').nstSlider({
-		    "rounding": {
-		        "1": "50"
-		    },
-		    "left_grip_selector": ".leftGrip",
-		    "right_grip_selector": ".rightGrip",
-		    "value_bar_selector": ".bar",
-		    "value_changed_callback": function(cause, leftValue, rightValue) {
-		        var $container = $(this).parent();
-		        $container.find('.leftLabel').text(leftValue);
-		        $container.find('.rightLabel').text(rightValue);
-		    }
-		});
+	$("#calendar").asDatepicker({
+		mode: 'range'
+	});
+
+	$('.nstSlider').nstSlider({
+		"rounding": {
+			"1": "50"
+		},
+		"left_grip_selector": ".leftGrip",
+		"right_grip_selector": ".rightGrip",
+		"value_bar_selector": ".bar",
+		"value_changed_callback": function(cause, leftValue, rightValue) {
+			var $container = $(this).parent();
+			$container.find('.leftLabel').text(leftValue);
+			$container.find('.rightLabel').text(rightValue);
+		}
+	});	
 </script>
 </body>
 </html>

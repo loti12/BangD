@@ -13,7 +13,7 @@
 	margin: 2px 5px 0 20px;
 }
 .type_item .ico_calendar{
-	background: url(img/icon_search_select.png) no-repeat 1px -38px;
+	background: url(img/sprites_v2.png) no-repeat -60px -40px;
 }
 .flight_attribute .first_line{
 	font-size: 0;
@@ -36,27 +36,26 @@
 .ico_search_type{
 	display: inline-block;
 	width: 20px;
-	height: 20px;
-	background: url(img/icon_search_select.png);
+	height: 30px;
+	background: url(img/sprites_v2.png);
 }
 .ico_search_dcity{
-	background-position:  0 0;
+	background-position:  0 -33px;
 }
 .ico_search_acity{
-	background-position: 0 -20px;
+	background-position: -30px -34px;
 }
-
 .flight_attribute input{
 	padding:0 5px 0 32px;
-	line-height:32px;
-	height: 32px;
+	line-height:42px;
+	height: 42px;
 	width: 200px;
 }
 .search_tools .btn_search{
 	color: #fff;
 	background-color: #108ee9;
 	font-size: 14px;
-	margin: 2px 15px 0 0;
+	margin: 8px 15px 0 0;
 	line-height: 34px;
 	height: 34px;
 	padding: 0;

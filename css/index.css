@@ -689,7 +689,19 @@ a {
 .search_form input {
 	font-family: "Microsoft YaHei",SimSun,Tahoma,Verdana,Arial,sans-serif;
 }
+/*日期选择*/
+.search_calendar .calendar-input{
+	width: 242px;
+	height: 48px;
+	line-height: 48px;
+	border:none;
+	border:0;
+}
 
+/* .search_calendar .calendar-icon:after{
+	content: '×'
+
+} */
 .search_form .search_calendar,.search_form .search_depart,.search_form .search_path,.search_form .search_return {
 	position: relative;
 	float: left;

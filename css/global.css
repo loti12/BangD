@@ -89,6 +89,7 @@ img{vertical-align:top;border:none}
     zoom:1;
     color: #7c7c7d;
     font-size: 14px;
+    cursor: pointer
 }
 .head-nav-r .weixin:hover .downCon, 
 .head-nav-r .down:hover .downCon{display: block;}
